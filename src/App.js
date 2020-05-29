@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { PAGE_PROFILE, PAGE_HELP } from "./features/navigation/index";
 
 import Profile from "./pages/Profile";

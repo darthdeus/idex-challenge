@@ -11,9 +11,13 @@ export default function Profile() {
   return (
     <div className="flex profile">
       <div className="left">
-        <div className="item">Email {user.email}</div>
+        <div className="item">
+          {i18n("email")} {user.email}
+        </div>
 
-        <div className="item">Full name: {user.fullName}</div>
+        <div className="item">
+          {i18n("full_name")}: {user.fullName}
+        </div>
 
         <div className="teams">
           <ul>
@@ -23,7 +27,7 @@ export default function Profile() {
           </ul>
         </div>
       </div>
-      <div className="right">Recent likes</div>
+      <div className="right">{i18n("recent_likes")}</div>
     </div>
   );
 }

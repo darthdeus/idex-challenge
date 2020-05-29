@@ -1,5 +1,4 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import { useI18n } from "../features/i18n";
 
 export default function Help() {

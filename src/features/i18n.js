@@ -5,14 +5,27 @@ const { createSlice } = require("@reduxjs/toolkit");
 const keys = {
   en: {
     // This is less than ideal, but running out of time
-    ["pages.profile"]: "Profile",
-    ["pages.help"]: "Help",
-    ["help.title"]: "Contact us",
-    ["help.description"]: "Some description",
-    ["help.placeholder"]: "Some placeholder",
-    ["help.button"]: "Send",
+    "pages.profile": "Profile",
+    "pages.help": "Help",
+    "help.title": "Contact us",
+    "help.description": "Some description",
+    "help.placeholder": "Some placeholder",
+    "help.button": "Send",
+    email: "Email",
+    full_name: "Full name",
+    recent_likes: "Recent likes",
   },
-  cz: {},
+  cz: {
+    "pages.profile": "Profil",
+    "pages.help": "Napoveda",
+    "help.title": "Kontaktujte nas",
+    "help.description": "Some description",
+    "help.placeholder": "Some placeholder",
+    "help.button": "Send",
+    email: "Email",
+    full_name: "Jmeno",
+    recent_likes: "Oblibene polozky",
+  },
 };
 
 function makeLookup(language) {

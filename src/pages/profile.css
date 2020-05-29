@@ -1,0 +1,9 @@
+.profile .left,
+.profile .right {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.profile .left {
+  background: white;
+}

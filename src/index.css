@@ -58,3 +58,11 @@ img.logo {
   color: white;
   border: none;
 }
+
+.main-header {
+  background: white;
+}
+
+.main-content {
+  background: #fafafa;
+}

@@ -5,9 +5,12 @@ import { gotoProfile, gotoHelp, PAGE_HELP, PAGE_PROFILE } from "../features/navi
 
 // not doing this as a module to save time
 import "./Sidebar.css";
+import { useI18n } from "../features/i18n";
 
 export default function Sidebar() {
   const dispatch = useDispatch();
+  const i18n = useI18n();
+
   const currentPage = useSelector(state => state.navigation.page);
 
   return (
@@ -26,7 +29,7 @@ export default function Sidebar() {
               href="#"
               onClick={() => dispatch(gotoProfile())}
             >
-              Profile
+              {i18n("pages.profile")}
             </button>
           </li>
           <li>
@@ -35,7 +38,7 @@ export default function Sidebar() {
               href="#"
               onClick={() => dispatch(gotoHelp())}
             >
-              Help
+              {i18n("pages.help")}
             </button>
           </li>
         </ul>

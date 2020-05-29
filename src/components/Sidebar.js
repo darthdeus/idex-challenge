@@ -3,12 +3,15 @@ import { useDispatch, useSelector } from "react-redux";
 import logo from "../app_logo.png";
 import { gotoProfile, gotoHelp, PAGE_HELP, PAGE_PROFILE } from "../features/navigation";
 
+// not doing this as a module to save time
+import "./Sidebar.css";
+
 export default function Sidebar() {
   const dispatch = useDispatch();
   const currentPage = useSelector(state => state.navigation.page);
 
   return (
-    <div className="sidebar">
+    <>
       <div className="logo-container">
         <img className="logo" src={logo} alt="logo" />
       </div>
@@ -37,6 +40,6 @@ export default function Sidebar() {
           </li>
         </ul>
       </nav>
-    </div>
+    </>
   );
 }

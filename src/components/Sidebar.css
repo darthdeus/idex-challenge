@@ -1,0 +1,37 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0 3rem;
+}
+img.logo {
+  width: 3rem;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.main-nav ul li {
+}
+
+.main-nav ul li button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.3rem 0 0.3rem 4rem;
+  color: white;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+}
+
+.main-nav ul li button:focus {
+}
+
+.main-nav ul li button:hover,
+.main-nav ul li button.active {
+  background: #555;
+  color: white;
+  border: none;
+}

@@ -26,8 +26,10 @@ function App() {
 
   return (
     <>
-      <div className="container">
-        <Sidebar />
+      <div className="wrapper">
+        <div className="sidebar">
+          <Sidebar />
+        </div>
 
         <header className="main-header">This is the page header</header>
         <main className="main-content">
@@ -37,7 +39,7 @@ function App() {
           {React.createElement(currentComponent)}
         </main>
 
-        <footer className="main-footer">This is the main footer</footer>
+        <footer className="main-footer">&copy; 2020 IDEX</footer>
       </div>
     </>
   );
